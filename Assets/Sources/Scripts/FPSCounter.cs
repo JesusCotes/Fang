@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class FPSCounter : MonoBehaviour
 {
-    void awake()
+    void Awake()
     {
         Application.targetFrameRate = 60;
     }

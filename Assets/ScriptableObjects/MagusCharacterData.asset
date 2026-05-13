@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0e4092fbdd914418840c8cfe3d33d0, type: 3}
+  m_Name: MagusCharacterData
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Magus
+  characterType: 1
+  initialNPCRole: 1
+  maxHealth: 10
+  attackPower: 1
+  defense: 1
+  speed: 3
+  walkSpeed: 1.75
+  runSpeed: 1.5
+  characterRadius: 0.25
+  detectionDistance: 0.2
+  raycastOffset: {x: 0, y: 0}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  battlePrefab: {fileID: 0}
