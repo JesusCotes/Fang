@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: LinkCharacterData
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Link
-  characterType: 0
-  initialNPCRole: 0
+  characterType: 1
+  initialNPCRole: 1
   maxHealth: 10
   attackPower: 1
   defense: 1
   speed: 3
-  walkSpeed: 0.75
+  walkSpeed: 3
   runSpeed: 1.5
   characterRadius: 0.25
   detectionDistance: 0.2
@@ -27,4 +27,8 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
+  minWaitTime: 0
+  maxWaitTime: 0
+  minPatrolDistance: 5
+  patrolRadius: 20
   battlePrefab: {fileID: 0}

@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: MagusCharacterData
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Magus
-  characterType: 1
-  initialNPCRole: 1
+  characterType: 0
+  initialNPCRole: 2
   maxHealth: 10
   attackPower: 1
   defense: 1
   speed: 3
-  walkSpeed: 1.75
-  runSpeed: 1.5
+  walkSpeed: 5
+  runSpeed: 5
   characterRadius: 0.25
-  detectionDistance: 0.2
+  detectionDistance: 0
   raycastOffset: {x: 0, y: 0}
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 192
+  minWaitTime: 1
+  maxWaitTime: 4
+  minPatrolDistance: 5
+  patrolRadius: 20
   battlePrefab: {fileID: 0}

@@ -30,10 +30,10 @@ public class BattleManager : Singleton<BattleManager>
     private IEnumerator SetupRoutine()
     {
         // 1. Calcular punto central del encuentro
-        Vector3 playerPos = RPGMovement.Instance.transform.position;
+        Vector3 playerPos = BaseCharacter.PlayerInstance.transform.position;
         Vector3 enemyPos = activeWorldEnemy.transform.position;
         Vector3 centerPoint = (playerPos + enemyPos) / 2f;
-        CharacterData playerData = RPGMovement.Instance.characterData; // Obtiene el CharacterData del jugador
+        CharacterData playerData = BaseCharacter.PlayerInstance.characterData; // Obtiene el CharacterData del jugador
 
         // 2. Calcular posiciones seguras (que no estén dentro de paredes)
         Vector3 playerTargetPos = GetSafePosition(centerPoint, Vector3.left, 1.5f);
@@ -47,18 +47,18 @@ public class BattleManager : Singleton<BattleManager>
         while (timer < timeout)
         {
             timer += Time.deltaTime;
-            bool playerArrived = MoveTowardsTarget(RPGMovement.Instance.rb, RPGMovement.Instance, playerTargetPos, moveSpeed); // Pasa BaseCharacter
+            bool playerArrived = MoveTowardsTarget(BaseCharacter.PlayerInstance.rb, BaseCharacter.PlayerInstance, playerTargetPos, moveSpeed); // Pasa BaseCharacter
             bool enemyArrived = MoveTowardsTarget(activeWorldEnemy.rb, activeWorldEnemy, enemyTargetPos, moveSpeed); // Pasa BaseCharacter
 
             if (playerArrived && enemyArrived) break;
             yield return new WaitForFixedUpdate();
         }
-        StopUnit(RPGMovement.Instance.rb, RPGMovement.Instance);
+        StopUnit(BaseCharacter.PlayerInstance.rb, BaseCharacter.PlayerInstance);
         StopUnit(activeWorldEnemy.rb, activeWorldEnemy);
 
         // 4. Añadimos el componente de batalla a los objetos ya existentes
-        playerUnit = RPGMovement.Instance.gameObject.GetComponent<BattleUnit>() ?? RPGMovement.Instance.gameObject.AddComponent<BattleUnit>();
-        playerUnit.SetStats(RPGMovement.Instance.characterData); // Usa characterData
+        playerUnit = BaseCharacter.PlayerInstance.gameObject.GetComponent<BattleUnit>() ?? BaseCharacter.PlayerInstance.gameObject.AddComponent<BattleUnit>();
+        playerUnit.SetStats(BaseCharacter.PlayerInstance.characterData); // Usa characterData
 
         enemyUnit = activeWorldEnemy.gameObject.GetComponent<BattleUnit>() ?? activeWorldEnemy.gameObject.AddComponent<BattleUnit>();
         enemyUnit.SetStats(currentEnemyData); // Usa characterData

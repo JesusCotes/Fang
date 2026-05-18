@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 4369802750705257331}
   - component: {fileID: 5751451591564507802}
   - component: {fileID: 1977200740095769046}
-  - component: {fileID: 5133929683944877456}
   - component: {fileID: 418461821943129464}
   - component: {fileID: 5577235368041020777}
+  - component: {fileID: 832923173163082797}
   m_Layer: 0
   m_Name: Magus
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +52,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0
+  m_LinearDamping: 3.01
+  m_AngularDamping: 2.53
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -65,7 +65,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!95 &4369802750705257331
 Animator:
   serializedVersion: 7
@@ -183,37 +183,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.44
---- !u!114 &5133929683944877456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7405329125688189784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec30e706364dba64580fa0630a4cee93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  rb: {fileID: 5377998028546796371}
-  anim: {fileID: 4369802750705257331}
-  agent: {fileID: 0}
-  stats: {fileID: 11400000, guid: 2a55e89fc02bd6145bc3e4735fdd34a6, type: 2}
-  speedWalk: 1.75
-  speedRun: 1.5
-  minMoveTime: 1
-  maxMoveTime: 2
-  minWaitTime: 1
-  maxWaitTime: 10
-  minPatrolDistance: 5
-  patrolRadius: 20
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 192
-  detectionDistance: 0
-  characterRadius: 0.25
-  raycastOffset: {x: 0, y: 0.41}
-  isPlayerNear: 0
 --- !u!195 &418461821943129464
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -228,7 +197,7 @@ NavMeshAgent:
   m_Acceleration: 1000
   avoidancePriority: 50
   m_AngularSpeed: 0
-  m_StoppingDistance: 0.5
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
   m_AutoRepath: 1
@@ -272,6 +241,23 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 1}
   m_Radius: 5
+--- !u!114 &832923173163082797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405329125688189784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de5a90d056434b14c979c5375c5ea5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BaseCharacter
+  rb: {fileID: 5377998028546796371}
+  anim: {fileID: 4369802750705257331}
+  agent: {fileID: 418461821943129464}
+  characterData: {fileID: 11400000, guid: fabf027f04a60254aa132b6b3b11e81c, type: 2}
+  currentRole: 1
 --- !u!1001 &7320721775694959979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -408,6 +394,11 @@ PrefabInstance:
     - target: {fileID: 6670951567817080929, guid: d3bb83b272421f9418114355b9372c24,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119068600234814611, guid: d3bb83b272421f9418114355b9372c24,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
