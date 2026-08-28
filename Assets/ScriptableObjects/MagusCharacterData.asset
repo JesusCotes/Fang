@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: MagusCharacterData
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   characterName: Magus
-  characterType: 0
-  initialNPCRole: 2
+  characterType: 1
+  initialNPCRole: 1
   maxHealth: 10
   attackPower: 1
   defense: 1
   speed: 3
-  walkSpeed: 5
+  walkSpeed: 3
   runSpeed: 5
   characterRadius: 0.25
   detectionDistance: 0

@@ -258,6 +258,7 @@ MonoBehaviour:
   agent: {fileID: 418461821943129464}
   characterData: {fileID: 11400000, guid: fabf027f04a60254aa132b6b3b11e81c, type: 2}
   currentRole: 1
+  currentHealth: 0
 --- !u!1001 &7320721775694959979
 PrefabInstance:
   m_ObjectHideFlags: 0

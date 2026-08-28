@@ -27,7 +27,8 @@ public class GameManager : Singleton<GameManager>
         {
             case GameState.Exploration:
                 Time.timeScale = 1f;
-                // Habilitar controles de movimiento
+                // La cámara vuelve a seguir solo al jugador
+                if (CameraController.Instance != null) CameraController.Instance.SetPlayerCameraFollow();
                 break;
             case GameState.Battle:
                 // Aquí podrías pausar el movimiento del jugador
