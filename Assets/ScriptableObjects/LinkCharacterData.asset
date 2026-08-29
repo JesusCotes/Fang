@@ -22,8 +22,8 @@ MonoBehaviour:
   walkSpeed: 13
   runSpeed: 9
   characterRadius: 0.25
-  detectionDistance: 0.2
-  raycastOffset: {x: 0, y: 0}
+  detectionDistance: 0.48
+  raycastOffset: {x: 0, y: 0.6}
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 192

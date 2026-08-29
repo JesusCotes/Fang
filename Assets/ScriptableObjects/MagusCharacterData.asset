@@ -21,7 +21,7 @@ MonoBehaviour:
   speed: 3
   walkSpeed: 3
   runSpeed: 5
-  characterRadius: 0.25
+  characterRadius: 0.1
   detectionDistance: 0
   raycastOffset: {x: 0, y: 0}
   obstacleLayer:
