@@ -7,7 +7,7 @@ public class PlayerMovementController : MonoBehaviour
 {
     // Debe coincidir con la convención de RollDirection (Int) del Animator: 0=Front, 1=Back, 2=Left, 3=Right
     private enum RollDirection { Front = 0, Back = 1, Left = 2, Right = 3 }
-    private enum MovementMode { Normal, Rolling }
+    private enum MovementMode { Normal, Rolling, Climbing }
 
     private BaseCharacter baseCharacter;
     private Rigidbody2D rb;
@@ -24,6 +24,14 @@ public class PlayerMovementController : MonoBehaviour
     private MovementMode mode = MovementMode.Normal;
     private float rollTimer;
     private Vector2 rollDirection; // Dirección congelada al iniciar el Roll; el input se ignora hasta que termine
+
+    [Header("Climb")]
+    [SerializeField] private float climbSpeed = 3f;
+
+    private Ladder currentLadder;
+    private RigidbodyType2D previousBodyType;
+
+    public bool IsClimbing => mode == MovementMode.Climbing;
 
     [Header("Debug")]
     public bool showObstacleDetectionGizmo = true; // Dibuja el Raycast de HasObstacleAhead en la vista Scene
@@ -50,6 +58,12 @@ public class PlayerMovementController : MonoBehaviour
             return;
         }
 
+        if (mode == MovementMode.Climbing)
+        {
+            TickClimb();
+            return;
+        }
+
         CharacterData data = baseCharacter.characterData;
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -60,6 +74,12 @@ public class PlayerMovementController : MonoBehaviour
             lastMovementDirection = Mathf.Abs(input.x) > Mathf.Abs(input.y)
                 ? (input.x > 0 ? Vector2.right : Vector2.left)
                 : (input.y > 0 ? Vector2.up : Vector2.down);
+        }
+
+        // Se evalúa antes que el obstáculo: la base/cima de la escalera suele estar pegada a un muro
+        if (TryStartClimb(input))
+        {
+            return;
         }
 
         if (Input.GetKeyDown(rollKey))
@@ -121,6 +141,86 @@ public class PlayerMovementController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
     }
+
+    // Se engancha a una escalera si el input es principalmente vertical y apunta hacia el interior del tramo
+    // (arriba desde la base, abajo desde la cima).
+    private bool TryStartClimb(Vector2 input)
+    {
+        if (Mathf.Abs(input.y) < 0.001f || Mathf.Abs(input.y) <= Mathf.Abs(input.x)) return false;
+
+        Vector2 body = GetBodyPoint();
+        Ladder ladder = Ladder.FindAt(body);
+        if (ladder == null) return false;
+
+        bool goingUp = input.y > 0f;
+        if (goingUp && body.y >= ladder.TopY) return false;
+        if (!goingUp && body.y <= ladder.BottomY) return false;
+
+        StartClimb(ladder);
+        return true;
+    }
+
+    // Alinea al jugador con el centro de la escalera y lo pasa a Kinematic para atravesar el muro que cubre la escalera.
+    private void StartClimb(Ladder ladder)
+    {
+        mode = MovementMode.Climbing;
+        currentLadder = ladder;
+
+        previousBodyType = rb.bodyType;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.linearVelocity = Vector2.zero;
+        rb.position = new Vector2(ladder.CenterX - baseCharacter.characterData.raycastOffset.x, rb.position.y);
+
+        lastMovementDirection = Vector2.up;
+        anim.SetBool("Run", false);
+        anim.SetFloat("Horizontal", 0f);
+        anim.SetFloat("Vertical", 0f);
+        anim.SetFloat("ClimbSpeed", 0f);
+        anim.SetBool("Climb", true);
+    }
+
+    // Solo movimiento vertical. La animación avanza al subir, retrocede al bajar y se congela sin input.
+    // Se suelta la escalera al rebasar la cima subiendo o la base bajando.
+    private void TickClimb()
+    {
+        if (currentLadder == null || !currentLadder.isActiveAndEnabled)
+        {
+            EndClimb();
+            return;
+        }
+
+        float v = Input.GetAxisRaw("Vertical");
+        Vector2 body = GetBodyPoint();
+
+        if ((v > 0f && body.y >= currentLadder.TopY) || (v < 0f && body.y <= currentLadder.BottomY))
+        {
+            EndClimb();
+            return;
+        }
+
+        rb.linearVelocity = new Vector2(0f, v * climbSpeed);
+        anim.SetFloat("ClimbSpeed", v);
+    }
+
+    private void EndClimb()
+    {
+        mode = MovementMode.Normal;
+        currentLadder = null;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = previousBodyType;
+
+        anim.SetFloat("ClimbSpeed", 1f);
+        anim.SetBool("Climb", false); // link-climb-up -> Idle_Back
+    }
+
+    private void OnDisable()
+    {
+        if (mode == MovementMode.Climbing) EndClimb();
+    }
+
+    // Punto de referencia del cuerpo (mismo que el origen del Raycast de obstáculos)
+    private Vector2 GetBodyPoint() => rb.position + baseCharacter.characterData.raycastOffset;
 
     private RollDirection ToRollDirection(Vector2 direction)
     {

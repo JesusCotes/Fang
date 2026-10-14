@@ -1579,6 +1579,2404 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4616e774d3c628d4b9830360c26e9e00
+      internalID: -1717181798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c684cfc3c14d740b3c832729ae0a8e
+      internalID: 102211371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8177a336f37da024da70cf33ba9be031
+      internalID: -1776670379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500886aaebfcd7848b36755c500cb293
+      internalID: 1464629066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d21f8d871c0a4444b85b05067a506a6
+      internalID: 2062705134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49589586ca67124297285cc88872482
+      internalID: 1570079816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baee800b5ad9d694abb256ff1e0606db
+      internalID: 450780345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4c688ac1be8604081a629bfcd7f846
+      internalID: -1763772469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad31dab43fc3694caffecef5e8fa45c
+      internalID: 252166981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be4f624f15a81d4e94fe3f0fb705b00
+      internalID: 209282369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5156df008251842a0c2d8730a7dc29
+      internalID: 2057619230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408656ae86910f8409fdaba141360192
+      internalID: 1839245336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1820efdd3a57c63438d1fa5083d07404
+      internalID: -1876432407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1036
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b872e1d7db513a94eb4ab4ce978542dc
+      internalID: 249165021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17a60959031f984996a8a4f7110d774
+      internalID: 908320524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32992c214c1e4c4b8b73f42f773b205
+      internalID: -1498471114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef4e04fbc0a0384dad6bc121d1797a7
+      internalID: -1749330611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6157380f4d28334395024676c75de59
+      internalID: -1051280680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5f7997eeb8a76429723961dd6dd810
+      internalID: 46487020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba5bbbced0b486479bbaad73b421fcc
+      internalID: 1003033135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5c995697865ea44a75fce3c975000a
+      internalID: -2071311123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f5d278152ee0d48b5ee4949286cafc
+      internalID: 1382119576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3d2138de81c774e97ed90261990e5a
+      internalID: -1002394449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5ccfd69b075034abbf25a792669dd3
+      internalID: 1629801672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9798f6230d280c43929330fccbc3460
+      internalID: -2085270431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1cff1ab9b25e3458ce73d9d18670eb
+      internalID: -1913217122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4615fc3fd96d604bb3010456b3b823b
+      internalID: 1956632281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a87af4dd2814c45a6d22d211ac997b
+      internalID: -423561273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b361871476baff488317d6346f04833
+      internalID: -152162200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45d671944bb9c640b5579d37b202d66
+      internalID: 780329092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8344e364466d0e04ab042a72c198b38e
+      internalID: -1175330910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7c1b4410bfb1a49a205b70a6c0feda
+      internalID: 758845435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a120e5298e13e74faa22998fd8a343c
+      internalID: 226828088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2c297f38d78644698cc485d1c67013
+      internalID: 54154027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce02d06a362c80468de1f5b300c3c8e
+      internalID: 940269229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bafb585f32ce8f4cad2bb70fba96230
+      internalID: 1823005160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb70355e7aa3db43ba6f64e44df4817
+      internalID: 1401985210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1004
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0a64fcd4435f94bb9304d27c1c23da
+      internalID: 1102320378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742d54989982d60439a7165e583117ba
+      internalID: -1988958352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9edb04406f9b344be380daf20ca957
+      internalID: 1770385509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a965c338af2fba84ba17e2da68c00550
+      internalID: 1033437505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46824468523d1749b85954172d4f9b0
+      internalID: 2040678600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419173385268b01409ef826f409561ce
+      internalID: -1814821603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806065142bcf3864abc96f26a7bd0f56
+      internalID: -1398838286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7499ffe4af4ca4dafa20765ca3c1c0
+      internalID: 56817735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a3f393358006842bdee016e793b51d
+      internalID: 1980721717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 972
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d9b60fa75ec8a42b0ca54c358a0222
+      internalID: -1348081311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ae6c5852a02d54d96283a4d1a742c1
+      internalID: -1956917437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b3bf65570af9249807ca00149c0995
+      internalID: -1671487562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502a73367d0428f46a546a0023573199
+      internalID: 1580305002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ae9c6c38748ed4ea6dc2aa3ee8363f
+      internalID: 1914544363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d00779cb2a3cb94d8b5242e9368c6c9
+      internalID: -1778954450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cd8983b0745d548ac4fb181bd1a51d
+      internalID: -715753018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7027632e2b8ca4aa5457a986a6d515
+      internalID: -786937832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2195a5486585a48b106d6dd33f7b5d
+      internalID: -2141533399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff315e25552ff45498006dc816748058
+      internalID: 1981433562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf3abdd4da0f5649b0b900fce3f59de
+      internalID: 154310513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 940
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8233707901a850e4fbcb863a17d0a159
+      internalID: 1521764394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432ba7f47aa1463488c5632bee690f8d
+      internalID: 1126438413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e474e412f17a29b46a2420d0ff559879
+      internalID: -1028870616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a8ffb635841c04292c1ba37e3e7e11
+      internalID: -254363843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb2733a4de5d704bb28d5cc7edd927c
+      internalID: 1260579566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d19850d47f624f49afef72dcf62c68e
+      internalID: 1647207013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6869311468820b428715da81ce4cb26
+      internalID: -396914098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2eb7acf020707e408fff5141c138fd4
+      internalID: -2004114288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0fef3a29767cc45bf9a3061f70df99
+      internalID: 1844427114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5207f277866874bbf65867c38008c7
+      internalID: -348744464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9eb638836f9fc54ebb3555337b41a50
+      internalID: -55953595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3762274b5947649a3c2cecd0e10eca
+      internalID: 1144829700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0441445a423f1044b4bb4fe1d2edac9
+      internalID: 78619059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b52fc478c10134e99d6a19706aa984
+      internalID: -718831556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9377734e60ea2cf49b15b01aff055387
+      internalID: -255703079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a42084a224a784393889311ae2eb1c
+      internalID: -2118772423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a3c1615ea4f654a89097242744eb96
+      internalID: -620198643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 908
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422db6656267e384fa4ca289be4c15a8
+      internalID: -773106230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4471f1b05ad434b9b070e3068bebaa
+      internalID: -1582021106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1f50ff470979540a1f3bfcc948401c
+      internalID: 1749419680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d50566e9ef39043bf3c0198d6c6c69
+      internalID: -661882154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5016c652db852d47a8f5a8dfe2592e3
+      internalID: -1026019385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3deb584e1b8ac0449bb812ee47871775
+      internalID: 2099425279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f51a747e33fa34894d305a0678fd72
+      internalID: -2048391761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e70cf7ceb1a7f44b0923ceb1e538e5
+      internalID: -91311532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4929ba2053829bc438dc437ad3af1d4b
+      internalID: -1215204389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510efbe47e0f7a84ebeb117244ec8ff1
+      internalID: 58823940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7577daffdbb2d4a9ca03b8fff32874
+      internalID: -1408178447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4cd4d58c03f0840a95935472c1ae54
+      internalID: 16255113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a72304583860a4daa016e2c8d060dc
+      internalID: 539867608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c9fb7754d467d4b8e6f96fc298eaac
+      internalID: -372276426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52336bda4d302a84185a2a4c566e57a8
+      internalID: -1245230571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102e89729c6ac9a4f84934f34e61a01c
+      internalID: 1046992347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95df04eb42a56cd428272c1f8d566b58
+      internalID: 1642468539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 876
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d1f0772ac913e43904bbdb40f1c899
+      internalID: -1123455668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c03b90d7c0283489959c5c3cc59444
+      internalID: -2025576663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44e81c7ea3f19443912c392b58dc112
+      internalID: 1626836984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa79d1a38a3c014e99fabc5c818ce1a
+      internalID: 1641410623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9685cf265b84042b9cadacad30b9e0
+      internalID: -404244778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a10485e752fd946a4594463ceaba3d
+      internalID: 1458837575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1f4a4b695e83b469c3b0c50b12c51b
+      internalID: -665236273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e4398f66b006c40b3fe38b48c6be57
+      internalID: -657665982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5a805f9f9a1724e86634daa3ae5244
+      internalID: -1058641234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec50b1c38a3b35244a9889a96f6e702f
+      internalID: -1924175220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb98924ae6162244b1b252752ce318f
+      internalID: 160936970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7869dd4ec28ec34191ccdca4363b953
+      internalID: -268416783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59baccccd7c69e545b1e4fd429ae4654
+      internalID: -1973885657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e3af44c86f7f44083e5dc9043ce3fa
+      internalID: -1518465241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf339c96093d0e42b1aed060f5e9697
+      internalID: -2142442240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e0702ae66a36c499cc559ec3d0454c
+      internalID: -1991288705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40f3f51807fdaf4e8a2439624222851
+      internalID: -292553186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link-minishcap-spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 844
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2b506c41ba0694bba5481e6ad4a48b
+      internalID: 1163858256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1598,12 +3996,81 @@ TextureImporter:
       link-minishcap-spritesheet_0: -91944102
       link-minishcap-spritesheet_1: 338012095
       link-minishcap-spritesheet_10: 290520244
+      link-minishcap-spritesheet_100: 1033437505
+      link-minishcap-spritesheet_101: 2040678600
+      link-minishcap-spritesheet_102: -1814821603
+      link-minishcap-spritesheet_103: -1398838286
+      link-minishcap-spritesheet_104: 56817735
+      link-minishcap-spritesheet_105: 1980721717
+      link-minishcap-spritesheet_106: -1348081311
+      link-minishcap-spritesheet_107: -1956917437
+      link-minishcap-spritesheet_108: -1671487562
+      link-minishcap-spritesheet_109: 1580305002
       link-minishcap-spritesheet_11: 937322413
+      link-minishcap-spritesheet_110: 1914544363
+      link-minishcap-spritesheet_111: -1778954450
+      link-minishcap-spritesheet_112: -715753018
+      link-minishcap-spritesheet_113: -786937832
+      link-minishcap-spritesheet_114: -2141533399
+      link-minishcap-spritesheet_115: 1981433562
+      link-minishcap-spritesheet_116: 154310513
+      link-minishcap-spritesheet_117: 1521764394
+      link-minishcap-spritesheet_118: 1126438413
+      link-minishcap-spritesheet_119: -1028870616
       link-minishcap-spritesheet_12: -1212442493
+      link-minishcap-spritesheet_120: -254363843
+      link-minishcap-spritesheet_121: 1260579566
+      link-minishcap-spritesheet_122: 1647207013
+      link-minishcap-spritesheet_123: -396914098
+      link-minishcap-spritesheet_124: -2004114288
+      link-minishcap-spritesheet_125: 1844427114
+      link-minishcap-spritesheet_126: -348744464
+      link-minishcap-spritesheet_127: -55953595
+      link-minishcap-spritesheet_128: 1144829700
+      link-minishcap-spritesheet_129: 78619059
       link-minishcap-spritesheet_13: -999714867
+      link-minishcap-spritesheet_130: -718831556
+      link-minishcap-spritesheet_131: -255703079
+      link-minishcap-spritesheet_132: -2118772423
+      link-minishcap-spritesheet_133: -620198643
+      link-minishcap-spritesheet_134: -773106230
+      link-minishcap-spritesheet_135: -1582021106
+      link-minishcap-spritesheet_136: 1749419680
+      link-minishcap-spritesheet_137: -661882154
+      link-minishcap-spritesheet_138: -1026019385
+      link-minishcap-spritesheet_139: 2099425279
       link-minishcap-spritesheet_14: 1052753725
+      link-minishcap-spritesheet_140: -2048391761
+      link-minishcap-spritesheet_141: -91311532
+      link-minishcap-spritesheet_142: -1215204389
+      link-minishcap-spritesheet_143: 58823940
+      link-minishcap-spritesheet_144: -1408178447
+      link-minishcap-spritesheet_145: 16255113
+      link-minishcap-spritesheet_146: 539867608
+      link-minishcap-spritesheet_147: -372276426
+      link-minishcap-spritesheet_148: -1245230571
+      link-minishcap-spritesheet_149: 1046992347
       link-minishcap-spritesheet_15: -2030435261
+      link-minishcap-spritesheet_150: 1642468539
+      link-minishcap-spritesheet_151: -1123455668
+      link-minishcap-spritesheet_152: -2025576663
+      link-minishcap-spritesheet_153: 1626836984
+      link-minishcap-spritesheet_154: 1641410623
+      link-minishcap-spritesheet_155: -404244778
+      link-minishcap-spritesheet_156: 1458837575
+      link-minishcap-spritesheet_157: -665236273
+      link-minishcap-spritesheet_158: -657665982
+      link-minishcap-spritesheet_159: -1058641234
       link-minishcap-spritesheet_16: 1324421512
+      link-minishcap-spritesheet_160: -1924175220
+      link-minishcap-spritesheet_161: 160936970
+      link-minishcap-spritesheet_162: -268416783
+      link-minishcap-spritesheet_163: -1973885657
+      link-minishcap-spritesheet_164: -1518465241
+      link-minishcap-spritesheet_165: -2142442240
+      link-minishcap-spritesheet_166: -1991288705
+      link-minishcap-spritesheet_167: -292553186
+      link-minishcap-spritesheet_168: 1163858256
       link-minishcap-spritesheet_17: 1905461589
       link-minishcap-spritesheet_18: 697734708
       link-minishcap-spritesheet_19: -224469944
@@ -1652,9 +4119,49 @@ TextureImporter:
       link-minishcap-spritesheet_58: -1686687568
       link-minishcap-spritesheet_59: 1934885526
       link-minishcap-spritesheet_6: -2076321039
+      link-minishcap-spritesheet_60: -1717181798
+      link-minishcap-spritesheet_61: 102211371
+      link-minishcap-spritesheet_62: -1776670379
+      link-minishcap-spritesheet_63: 1464629066
+      link-minishcap-spritesheet_64: 2062705134
+      link-minishcap-spritesheet_65: 1570079816
+      link-minishcap-spritesheet_66: 450780345
+      link-minishcap-spritesheet_67: -1763772469
+      link-minishcap-spritesheet_68: 252166981
+      link-minishcap-spritesheet_69: 209282369
       link-minishcap-spritesheet_7: -659875026
+      link-minishcap-spritesheet_70: 2057619230
+      link-minishcap-spritesheet_71: 1839245336
+      link-minishcap-spritesheet_72: -1876432407
+      link-minishcap-spritesheet_73: 249165021
+      link-minishcap-spritesheet_74: 908320524
+      link-minishcap-spritesheet_75: -1498471114
+      link-minishcap-spritesheet_76: -1749330611
+      link-minishcap-spritesheet_77: -1051280680
+      link-minishcap-spritesheet_78: 46487020
+      link-minishcap-spritesheet_79: 1003033135
       link-minishcap-spritesheet_8: -1889502408
+      link-minishcap-spritesheet_80: -2071311123
+      link-minishcap-spritesheet_81: 1382119576
+      link-minishcap-spritesheet_82: -1002394449
+      link-minishcap-spritesheet_83: 1629801672
+      link-minishcap-spritesheet_84: -2085270431
+      link-minishcap-spritesheet_85: -1913217122
+      link-minishcap-spritesheet_86: 1956632281
+      link-minishcap-spritesheet_87: -423561273
+      link-minishcap-spritesheet_88: -152162200
+      link-minishcap-spritesheet_89: 780329092
       link-minishcap-spritesheet_9: -1299838991
+      link-minishcap-spritesheet_90: -1175330910
+      link-minishcap-spritesheet_91: 758845435
+      link-minishcap-spritesheet_92: 226828088
+      link-minishcap-spritesheet_93: 54154027
+      link-minishcap-spritesheet_94: 940269229
+      link-minishcap-spritesheet_95: 1823005160
+      link-minishcap-spritesheet_96: 1401985210
+      link-minishcap-spritesheet_97: 1102320378
+      link-minishcap-spritesheet_98: -1988958352
+      link-minishcap-spritesheet_99: 1770385509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
