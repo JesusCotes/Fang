@@ -7,7 +7,7 @@ public class PlayerMovementController : MonoBehaviour
 {
     // Debe coincidir con la convención de RollDirection (Int) del Animator: 0=Front, 1=Back, 2=Left, 3=Right
     private enum RollDirection { Front = 0, Back = 1, Left = 2, Right = 3 }
-    private enum MovementMode { Normal, Rolling, Climbing }
+    private enum MovementMode { Normal, Rolling, ClimbMounting, Climbing }
 
     private BaseCharacter baseCharacter;
     private Rigidbody2D rb;
@@ -27,11 +27,18 @@ public class PlayerMovementController : MonoBehaviour
 
     [Header("Climb")]
     [SerializeField] private float climbSpeed = 3f;
+    [Tooltip("Duración de link-climb-start (montarse desde arriba). Debe coincidir con la longitud del clip.")]
+    [SerializeField] private float climbMountDuration = 0.4333333f;
+    [Tooltip("Cuánto baja el jugador desde la cima mientras se reproduce link-climb-start.")]
+    [SerializeField] private float climbMountDropDistance = 0.6f;
 
     private Ladder currentLadder;
     private RigidbodyType2D previousBodyType;
+    private float climbMountTimer;
+    private Vector2 climbMountFrom;
+    private Vector2 climbMountTo;
 
-    public bool IsClimbing => mode == MovementMode.Climbing;
+    public bool IsClimbing => mode == MovementMode.Climbing || mode == MovementMode.ClimbMounting;
 
     [Header("Debug")]
     public bool showObstacleDetectionGizmo = true; // Dibuja el Raycast de HasObstacleAhead en la vista Scene
@@ -55,6 +62,12 @@ public class PlayerMovementController : MonoBehaviour
         if (mode == MovementMode.Rolling)
         {
             TickRoll();
+            return;
+        }
+
+        if (mode == MovementMode.ClimbMounting)
+        {
+            TickClimbMount();
             return;
         }
 
@@ -156,25 +169,78 @@ public class PlayerMovementController : MonoBehaviour
         if (goingUp && body.y >= ladder.TopY) return false;
         if (!goingUp && body.y <= ladder.BottomY) return false;
 
-        StartClimb(ladder);
+        // Desde la mitad superior del tramo = montarse desde arriba (link-climb-start); desde abajo se engancha directo
+        bool fromTop = body.y > (ladder.BottomY + ladder.TopY) * 0.5f;
+        if (fromTop) StartClimbMount(ladder);
+        else StartClimb(ladder);
         return true;
     }
 
-    // Alinea al jugador con el centro de la escalera y lo pasa a Kinematic para atravesar el muro que cubre la escalera.
-    private void StartClimb(Ladder ladder)
+    // Pasa a Kinematic (para atravesar el muro que cubre la escalera) y limpia los parámetros de locomoción.
+    private void AttachToLadder(Ladder ladder)
     {
-        mode = MovementMode.Climbing;
         currentLadder = ladder;
 
         previousBodyType = rb.bodyType;
         rb.bodyType = RigidbodyType2D.Kinematic;
         rb.linearVelocity = Vector2.zero;
-        rb.position = new Vector2(ladder.CenterX - baseCharacter.characterData.raycastOffset.x, rb.position.y);
 
         lastMovementDirection = Vector2.up;
         anim.SetBool("Run", false);
         anim.SetFloat("Horizontal", 0f);
         anim.SetFloat("Vertical", 0f);
+        anim.SetFloat("ClimbSpeed", 0f);
+    }
+
+    // Enganche desde abajo: se alinea con el centro de la escalera y empieza a escalar inmediatamente.
+    private void StartClimb(Ladder ladder)
+    {
+        AttachToLadder(ladder);
+        rb.position = new Vector2(ladder.CenterX - baseCharacter.characterData.raycastOffset.x, rb.position.y);
+        EnterClimbing();
+    }
+
+    // Enganche desde arriba: se reproduce link-climb-start mientras el jugador se desliza hasta el centro
+    // de la escalera y baja climbMountDropDistance desde la cima. El input se ignora hasta que termine.
+    private void StartClimbMount(Ladder ladder)
+    {
+        mode = MovementMode.ClimbMounting;
+        AttachToLadder(ladder);
+
+        Vector2 offset = baseCharacter.characterData.raycastOffset;
+        float targetBodyY = Mathf.Min(GetBodyPoint().y, ladder.TopY) - climbMountDropDistance;
+        targetBodyY = Mathf.Max(targetBodyY, ladder.BottomY);
+
+        climbMountFrom = rb.position;
+        climbMountTo = new Vector2(ladder.CenterX, targetBodyY) - offset;
+        climbMountTimer = 0f;
+
+        anim.SetTrigger("ClimbStart");
+    }
+
+    private void TickClimbMount()
+    {
+        if (currentLadder == null || !currentLadder.isActiveAndEnabled)
+        {
+            EndClimb();
+            return;
+        }
+
+        climbMountTimer += Time.deltaTime;
+        float t = climbMountDuration > 0f ? Mathf.Clamp01(climbMountTimer / climbMountDuration) : 1f;
+        rb.MovePosition(Vector2.Lerp(climbMountFrom, climbMountTo, t));
+
+        if (t >= 1f)
+        {
+            rb.position = climbMountTo;
+            EnterClimbing();
+        }
+    }
+
+    private void EnterClimbing()
+    {
+        mode = MovementMode.Climbing;
+        rb.linearVelocity = Vector2.zero;
         anim.SetFloat("ClimbSpeed", 0f);
         anim.SetBool("Climb", true);
     }
@@ -210,13 +276,14 @@ public class PlayerMovementController : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         rb.bodyType = previousBodyType;
 
+        anim.ResetTrigger("ClimbStart");
         anim.SetFloat("ClimbSpeed", 1f);
-        anim.SetBool("Climb", false); // link-climb-up -> Idle_Back
+        anim.SetBool("Climb", false); // link-climb -> Idle_Back
     }
 
     private void OnDisable()
     {
-        if (mode == MovementMode.Climbing) EndClimb();
+        if (IsClimbing) EndClimb();
     }
 
     // Punto de referencia del cuerpo (mismo que el origen del Raycast de obstáculos)
