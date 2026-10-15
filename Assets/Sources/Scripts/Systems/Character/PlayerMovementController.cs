@@ -153,6 +153,7 @@ public class PlayerMovementController : MonoBehaviour
         mode = MovementMode.Rolling;
         rollDirection = lastMovementDirection;
         rollTimer = rollDuration;
+        characterAnimator.SetActionFacingDirection(rollDirection);
 
         anim.SetInteger("RollDirection", (int)ToRollDirection(rollDirection));
         anim.SetTrigger("Roll");
@@ -210,6 +211,7 @@ public class PlayerMovementController : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         lastMovementDirection = Vector2.up;
+        characterAnimator.SetFacingDirection(lastMovementDirection);
         anim.SetBool("Run", false);
         anim.SetFloat("Horizontal", 0f);
         anim.SetFloat("Vertical", 0f);
@@ -332,6 +334,7 @@ public class PlayerMovementController : MonoBehaviour
         grabbedObject = pushable;
         grabDirection = lastMovementDirection;
         grabStartTimer = grabStartDuration;
+        characterAnimator.SetActionFacingDirection(grabDirection);
 
         previousBodyType = rb.bodyType;
         rb.bodyType = RigidbodyType2D.Kinematic;
