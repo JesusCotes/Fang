@@ -7,7 +7,7 @@ public class PlayerMovementController : MonoBehaviour
 {
     // Debe coincidir con la convención de RollDirection (Int) del Animator: 0=Front, 1=Back, 2=Left, 3=Right
     private enum RollDirection { Front = 0, Back = 1, Left = 2, Right = 3 }
-    private enum MovementMode { Normal, Rolling, ClimbMounting, Climbing }
+    private enum MovementMode { Normal, Rolling, ClimbMounting, Climbing, Grabbing }
 
     private BaseCharacter baseCharacter;
     private Rigidbody2D rb;
@@ -39,6 +39,19 @@ public class PlayerMovementController : MonoBehaviour
     private Vector2 climbMountTo;
 
     public bool IsClimbing => mode == MovementMode.Climbing || mode == MovementMode.ClimbMounting;
+
+    [Header("Grab")]
+    [SerializeField] private KeyCode grabKey = KeyCode.X;
+    [Tooltip("Duración de link-grab-start-xxxx; el input de empujar/halar se ignora mientras dura.")]
+    [SerializeField] private float grabStartDuration = 0.1f;
+    [Tooltip("Alcance extra (sobre detectionDistance) para detectar el objeto a agarrar.")]
+    [SerializeField] private float grabReach = 0.3f;
+
+    private PushableObject grabbedObject;
+    private Vector2 grabDirection; // Dirección cardinal hacia el objeto agarrado (+ = empujar, - = halar)
+    private float grabStartTimer;
+
+    public bool IsGrabbing => mode == MovementMode.Grabbing;
 
     [Header("Debug")]
     public bool showObstacleDetectionGizmo = true; // Dibuja el Raycast de HasObstacleAhead en la vista Scene
@@ -77,6 +90,12 @@ public class PlayerMovementController : MonoBehaviour
             return;
         }
 
+        if (mode == MovementMode.Grabbing)
+        {
+            TickGrab();
+            return;
+        }
+
         CharacterData data = baseCharacter.characterData;
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -91,6 +110,11 @@ public class PlayerMovementController : MonoBehaviour
 
         // Se evalúa antes que el obstáculo: la base/cima de la escalera suele estar pegada a un muro
         if (TryStartClimb(input))
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(grabKey) && TryStartGrab())
         {
             return;
         }
@@ -284,6 +308,102 @@ public class PlayerMovementController : MonoBehaviour
     private void OnDisable()
     {
         if (IsClimbing) EndClimb();
+        if (IsGrabbing) EndGrab();
+    }
+
+    // Agarra el PushableObject que esté justo delante, en la dirección en la que mira el jugador.
+    private bool TryStartGrab()
+    {
+        CharacterData data = baseCharacter.characterData;
+        RaycastHit2D hit = Physics2D.Raycast(GetBodyPoint(), lastMovementDirection, data.detectionDistance + grabReach, data.obstacleLayer);
+        if (hit.collider == null) return false;
+
+        PushableObject pushable = hit.collider.GetComponentInParent<PushableObject>();
+        if (pushable == null) return false;
+
+        StartGrab(pushable);
+        return true;
+    }
+
+    // link-grab-start-xxxx -> link-grabing-xxxx. El jugador pasa a Kinematic para moverse en bloque con el objeto.
+    private void StartGrab(PushableObject pushable)
+    {
+        mode = MovementMode.Grabbing;
+        grabbedObject = pushable;
+        grabDirection = lastMovementDirection;
+        grabStartTimer = grabStartDuration;
+
+        previousBodyType = rb.bodyType;
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.linearVelocity = Vector2.zero;
+
+        anim.SetBool("Run", false);
+        anim.SetFloat("Horizontal", 0f);
+        anim.SetFloat("Vertical", 0f);
+        anim.SetInteger("GrabDirection", (int)ToRollDirection(grabDirection));
+        anim.SetInteger("GrabMove", 0);
+        anim.SetBool("Grab", true);
+        anim.SetTrigger("GrabStart");
+    }
+
+    // Mientras se mantenga grabKey: input hacia el objeto = empujar, input contrario = halar.
+    // El input perpendicular se ignora. Jugador y objeto se mueven con la misma velocidad en el eje del agarre.
+    private void TickGrab()
+    {
+        if (grabbedObject == null || !grabbedObject.isActiveAndEnabled || !Input.GetKey(grabKey))
+        {
+            EndGrab();
+            return;
+        }
+
+        if (grabStartTimer > 0f)
+        {
+            grabStartTimer -= Time.deltaTime;
+            SetGrabVelocity(Vector2.zero);
+            return;
+        }
+
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        float along = Vector2.Dot(input, grabDirection);
+        int move = along > 0.5f ? 1 : (along < -0.5f ? -1 : 0); // 1 = empujar, -1 = halar
+        anim.SetInteger("GrabMove", move);
+
+        Vector2 velocity = Vector2.zero;
+        if (move != 0)
+        {
+            CharacterData data = baseCharacter.characterData;
+            Vector2 direction = grabDirection * move;
+            float moveSpeed = grabbedObject.MoveSpeed;
+            float step = moveSpeed * Mathf.Max(Time.deltaTime, Time.fixedDeltaTime);
+
+            // Empujar: lo bloquea el objeto. Halar: también el jugador, que va delante en la dirección del movimiento.
+            bool blocked = !grabbedObject.CanMove(direction, step);
+            if (!blocked && move < 0)
+                blocked = HasObstacleAhead(direction, data.detectionDistance, data.obstacleLayer, data.raycastOffset);
+
+            if (!blocked) velocity = direction * moveSpeed;
+        }
+
+        SetGrabVelocity(velocity);
+    }
+
+    private void SetGrabVelocity(Vector2 velocity)
+    {
+        rb.linearVelocity = velocity;
+        if (grabbedObject != null) grabbedObject.SetVelocity(velocity);
+    }
+
+    private void EndGrab()
+    {
+        SetGrabVelocity(Vector2.zero);
+        grabbedObject = null;
+        mode = MovementMode.Normal;
+
+        rb.bodyType = previousBodyType;
+
+        anim.ResetTrigger("GrabStart");
+        anim.SetInteger("GrabMove", 0);
+        anim.SetBool("Grab", false); // -> Idle_xxxx en la dirección del agarre
     }
 
     // Punto de referencia del cuerpo (mismo que el origen del Raycast de obstáculos)
