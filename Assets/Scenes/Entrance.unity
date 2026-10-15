@@ -5082,7 +5082,7 @@ Tilemap:
       - {fileID: -1195266805, guid: e08c3479342257d4c8923d0deb151208, type: 3}
       - {fileID: 1718667101, guid: e08c3479342257d4c8923d0deb151208, type: 3}
       - {fileID: 1126115038, guid: e08c3479342257d4c8923d0deb151208, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: 5, z: 0}
@@ -25383,7 +25383,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -34944,6 +34944,11 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 5793682705476809331, guid: c2d7165b434d23d45b0cab821d7f2e15,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 41b9e4426d5e5a14daac7c66517e8492, type: 2}
     - target: {fileID: 7068933056321054801, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
       propertyPath: m_Enabled
