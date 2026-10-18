@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Interactable
+  - Pushable
   layers:
   - Default
   - TransparentFX
@@ -25,9 +27,9 @@ TagManager:
   - 
   - 
   - 
-  - Layer 1
-  - Layer 2
-  - Layer 3
+  - Interactable
+  - Hazard
+  - Platform
   - 
   - 
   - 

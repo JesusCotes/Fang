@@ -22,6 +22,7 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float rollDistance = 2f;
 
     private MovementMode mode = MovementMode.Normal;
+    private bool inputLocked; // Lo activa InteractionDetector mientras dura una interacción
     private float rollTimer;
     private Vector2 rollDirection; // Dirección congelada al iniciar el Roll; el input se ignora hasta que termine
 
@@ -53,6 +54,22 @@ public class PlayerMovementController : MonoBehaviour
 
     public bool IsGrabbing => mode == MovementMode.Grabbing;
 
+    // True mientras el jugador está en Roll, ClimbMounting, Climbing o Grabbing.
+    public bool IsBusy => mode != MovementMode.Normal;
+
+    // Bloquea el control sin desactivar el componente (BaseCharacter lo reactivaría en SetCharacterType).
+    // Se usa para interacciones y, más adelante, para diálogos.
+    public void SetInputLocked(bool locked)
+    {
+        inputLocked = locked;
+        if (!locked) return;
+
+        rb.linearVelocity = Vector2.zero;
+        anim.SetFloat("Horizontal", 0f);
+        anim.SetFloat("Vertical", 0f);
+        anim.SetBool("Run", false);
+    }
+
     [Header("Debug")]
     public bool showObstacleDetectionGizmo = true; // Dibuja el Raycast de HasObstacleAhead en la vista Scene
     private Vector2 lastObstacleCheckOrigin;
@@ -72,6 +89,13 @@ public class PlayerMovementController : MonoBehaviour
     // aplica la velocidad final al Rigidbody2D, y delega a TickRoll() mientras el Roll está en curso.
     public void Tick()
     {
+        if (inputLocked)
+        {
+            rb.linearVelocity = Vector2.zero;
+            characterAnimator.UpdateAnimations(Vector2.zero);
+            return;
+        }
+
         if (mode == MovementMode.Rolling)
         {
             TickRoll();

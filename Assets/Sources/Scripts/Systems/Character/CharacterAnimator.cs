@@ -45,6 +45,12 @@ public class CharacterAnimator : MonoBehaviour
         transform.localScale = scale;
     }
 
+    // Orientación cardinal persistente (última dirección de movimiento válida).
+    public Vector2 FacingDirection => facingDirection;
+
+    // Orientación fijada por la acción en curso (Roll/Grab); la usan los estados con tag LockedFacing.
+    public Vector2 ActionFacingDirection => actionFacingDirection;
+
     public void UpdateAnimations(Vector2 velocity = default)
     {
         if (anim == null) return;
