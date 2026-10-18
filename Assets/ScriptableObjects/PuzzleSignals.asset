@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeb34ac7c9915d46bdd8aaa7e52c85d, type: 3}
+  m_Name: PuzzleSignals
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleSignalCatalog
+  signals:
+  - id: entrada-puerta-principal
+    description: Placa junto al pasillo sur -> puerta principal. Se queda abierta
+      al retirar el peso.
+  - id: entrada-rejas-norte
+    description: Placa al norte de la caja -> rejas del paso norte. Se cierran al
+      liberar la placa.

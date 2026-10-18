@@ -12,7 +12,8 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     [Header("Señal")]
-    [Tooltip("Identificador que comparten la placa y sus receptores.")]
+    [Tooltip("Canal del puzle que emite esta placa.")]
+    [PuzzleSignalId]
     [SerializeField] private string signalId = "placa";
 
     [Header("Detección")]

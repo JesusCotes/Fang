@@ -6,6 +6,8 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     [Header("Señal")]
+    [Tooltip("Canal del puzle que escucha esta puerta.")]
+    [PuzzleSignalId]
     [SerializeField] private string signalId = "puerta";
     [Tooltip("Si se abre una vez, ya no se vuelve a cerrar. Necesario para puzles donde el peso se retira después.")]
     [SerializeField] private bool openOnce = true;

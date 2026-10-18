@@ -16,6 +16,7 @@ public class NPCMovementAI : MonoBehaviour
 
     private void Awake()
     {
+        
         baseCharacter = GetComponent<BaseCharacter>();
         agent = GetComponent<NavMeshAgent>();
     }
