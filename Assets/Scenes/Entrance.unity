@@ -658,7 +658,7 @@ Transform:
   m_GameObject: {fileID: 93014761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.84, y: -0.35, z: -10}
+  m_LocalPosition: {x: -2.77, y: -0.35, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1097,10 +1097,10 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -1.75}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 3.5}
     newSize: {x: 1, y: 3.5}
     adaptiveTilingThreshold: 0.5
@@ -1154,8 +1154,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 94950883e1a972642b2c949caa6e33d3, type: 3}
@@ -1177,7 +1177,7 @@ Transform:
   m_GameObject: {fileID: 189058660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.5, y: 11.25, z: 0}
+  m_LocalPosition: {x: -14.5, y: 9.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1736,8 +1736,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -105541197
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -4487,7 +4487,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.84, y: -0.35000038, z: -10}
+  m_LocalPosition: {x: -4.0744443, y: -0.34999943, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5082,7 +5082,7 @@ Tilemap:
       - {fileID: -1195266805, guid: e08c3479342257d4c8923d0deb151208, type: 3}
       - {fileID: 1718667101, guid: e08c3479342257d4c8923d0deb151208, type: 3}
       - {fileID: 1126115038, guid: e08c3479342257d4c8923d0deb151208, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: 5, z: 0}
@@ -25275,17 +25275,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.65}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2, y: 2}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9, y: 1.3}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &1914345154
 Rigidbody2D:
@@ -34922,7 +34922,7 @@ PrefabInstance:
     - target: {fileID: 119984196503569625, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
       propertyPath: rollDistance
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 987501879263691807, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
@@ -34942,7 +34942,7 @@ PrefabInstance:
     - target: {fileID: 3592152187437336643, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.6
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 5793682705476809331, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
@@ -34957,7 +34957,7 @@ PrefabInstance:
     - target: {fileID: 8933159651026471287, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.84
+      value: -2.77
       objectReference: {fileID: 0}
     - target: {fileID: 8933159651026471287, guid: c2d7165b434d23d45b0cab821d7f2e15,
         type: 3}
@@ -35013,6 +35013,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218680922638467370, guid: c2d7165b434d23d45b0cab821d7f2e15,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218680922638467370, guid: c2d7165b434d23d45b0cab821d7f2e15,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -105541197
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
