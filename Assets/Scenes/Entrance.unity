@@ -1651,6 +1651,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5856239300717784979, guid: b7a1672df89af454c8dd8f8586a3bb61,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856239300717784979, guid: b7a1672df89af454c8dd8f8586a3bb61,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856239300717784979, guid: b7a1672df89af454c8dd8f8586a3bb61,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1869315837
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5525,7 +5540,7 @@ Tilemap:
       - {fileID: -1195266805, guid: e08c3479342257d4c8923d0deb151208, type: 3}
       - {fileID: 1718667101, guid: e08c3479342257d4c8923d0deb151208, type: 3}
       - {fileID: 1126115038, guid: e08c3479342257d4c8923d0deb151208, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -10, y: 5, z: 0}
@@ -26096,8 +26111,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: e5386578e381d304dbc6c0080cebab33, type: 3}

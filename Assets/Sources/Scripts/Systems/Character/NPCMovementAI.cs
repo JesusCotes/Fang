@@ -12,7 +12,6 @@ public class NPCMovementAI : MonoBehaviour
     private NavMeshAgent agent;
     private Coroutine routine;
     private bool isPlayerNear; // Se activa/desactiva desde EnemyCombatTrigger
-    private bool isMoving;
 
     private void Awake()
     {
@@ -33,7 +32,6 @@ public class NPCMovementAI : MonoBehaviour
     {
         if (routine != null) StopCoroutine(routine);
         routine = null;
-        isMoving = false;
     }
 
     private IEnumerator MovementRoutine()
@@ -45,7 +43,6 @@ public class NPCMovementAI : MonoBehaviour
             // Si el personaje entra en batalla, pausamos su IA de mundo abierto
             if (baseCharacter.characterState == CharacterState.Battle)
             {
-                isMoving = false;
                 yield return new WaitForSeconds(1f);
                 continue;
             }
@@ -63,7 +60,6 @@ public class NPCMovementAI : MonoBehaviour
                 agent.speed = data.walkSpeed;
                 Vector3 patrolPoint = GetRandomPatrolPoint(data);
                 agent.SetDestination(patrolPoint);
-                isMoving = true;
 
                 while (agent.enabled && (agent.pathPending || agent.remainingDistance > 0.1f))
                 {
@@ -72,7 +68,6 @@ public class NPCMovementAI : MonoBehaviour
                     yield return null;
                 }
 
-                isMoving = false;
                 yield return new WaitForSeconds(Random.Range(data.minWaitTime, data.maxWaitTime)); // Pausa antes del próximo punto de patrulla
             }
             else
